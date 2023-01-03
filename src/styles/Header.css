@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  background-color: rgb(248, 248, 248);
+}
+.header nav .ul-items {
+  list-style: none;
+}
+.header nav .ul-items .li-items a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 1rem;
+  font-size: 14px;
+}
+.header nav .ul-items .li-items .orange {
+  color: rgba(235, 97, 17, 0.952);
+}
+.header nav .logo {
+  text-transform: uppercase;
+  margin-right: 4rem;
+  font-family: "Roboto", sans-serif;
+}
+.header nav .right {
+  display: flex;
+  align-items: center;
+}
+.header nav .right .search {
+  display: flex;
+  align-items: center;
+  color: rgb(97, 93, 93);
+  margin-right: 5rem;
+}
+.header nav .right .search .search-icon {
+  color: rgb(97, 93, 93);
+  font-size: 15px;
+}
+.header nav .right .sch-btn {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+.header nav .right-buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+.header nav .right-buttons button {
+  margin: 0 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.header nav .right-buttons button a {
+  text-decoration: none;
+  color: rgb(97, 93, 93);
+}
+.header nav .right-buttons .basket {
+  color: rgb(255, 151, 31);
+}/*# sourceMappingURL=Header.css.map */

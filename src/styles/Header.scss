@@ -1,0 +1,100 @@
+@import './colors';
+@import './mixins';
+@import './fonts';
+@import './globals';
+
+
+.header{
+    position: sticky;
+    top: 0;
+
+    nav{
+     @include flex-center;
+    justify-content: space-between;
+    height: 4rem;
+    background-color: $main-color;
+   
+
+
+  .ul-items{
+    list-style: none;
+
+    .li-items{
+         a{
+            text-decoration: none;
+            color: $secondary-color;
+            margin: 0 1rem;
+            font-size: 14px; 
+         }
+         .orange{
+           color: $orange-color;
+         }
+    }
+
+    
+  }
+
+
+.logo {
+  text-transform: uppercase;
+  margin-right: 4rem; 
+  font-family: $font-roboto; 
+  margin: 5px;
+}
+
+
+.right{
+    @include flex-center;
+    .search{
+        @include flex-center;
+        color: $gray-color;
+        margin-right: 5rem;
+
+        .search-icon{
+         color: $gray-color;
+         font-size: 15px;    
+        }
+    }
+    .sch-btn{
+        background-color: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+  .right-buttons {
+    @include flex-center;
+    margin-right: 1rem;
+
+    button {
+     margin: 0 1rem;
+     background: none;
+     border: none; 
+     cursor: pointer; 
+     
+     a{ 
+        text-decoration: none;
+        color: $gray-color;
+     }
+    }
+    .basket{
+       color: $basket-color; 
+    }
+  }
+} 
+}
+
+.hamburger{  //mobile hambuger
+margin: 5px;
+
+
+  >span{
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: $secondary-color;
+
+   &:not(:last-child){
+    margin-bottom: 5px;
+   }
+  }
+}
