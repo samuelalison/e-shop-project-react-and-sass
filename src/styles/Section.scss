@@ -1,4 +1,5 @@
 @import './colors';
+@import './mixins';
 @import './buttons';
 
 
@@ -7,15 +8,28 @@ background: linear-gradient(to right bottom, rgba(252, 104, 18, 0.587), rgba(252
 height: 80vh;
 background-size: cover;
 overflow: hidden;
+@include breakpoint-down(small){
+  height: 100%;
+  }
+
 
     .content{
         margin: 12rem;
         text-align: center;
-        h1{
+
+        @include breakpoint-down(small){
+          margin: 4rem;
+          } 
+
+         h1{
             font-size: 4rem;
             color: $main-color;
             text-shadow: 3px 3px 3px $main-color;
-        }
+            @include breakpoint-down(small){
+              font-size: 3rem;
+              margin: 7rem 0 5rem;
+              }
+          }
 
         button{
           @include button;
@@ -26,8 +40,11 @@ overflow: hidden;
     }
     .button-text{
       margin-left: 1rem;
+
+      
       p{
-        color: $main-color;  
+        color: $main-color;
+         
       }  
     }
 }

@@ -4,7 +4,11 @@
 .main{
    width: 100%;
    padding-bottom: 10rem;
-background-color: $cream-color;
+   background-color: $cream-color;
+   
+   @include breakpoint-down(small){
+    padding-bottom: 4rem;
+    } 
 }
 
 .center-text{
@@ -15,6 +19,10 @@ background-color: $cream-color;
         color: $gray-color;
         margin-top: 2rem;
         font-size: 4rem;
+
+        @include breakpoint-down(small){
+            font-size: 2rem;
+            } 
     }
 
 }
@@ -26,9 +34,16 @@ background-color: $cream-color;
     justify-content: space-around;
     gap: 3rem;
     text-align: center;
+    @include breakpoint-down(small){
+        margin-top: 2rem;
+         display: block;
+        }
 
     .exps{
         align-items: center;
+        @include breakpoint-down(small){
+            padding: 1.5rem 2rem;
+           }
 
         .gift{
             align-items: center;
@@ -38,6 +53,9 @@ background-color: $cream-color;
                 background-color: $main-color;
                 width: 5rem;
                 margin-left: 1rem;
+                @include breakpoint-down(small){
+                    width: 3rem;;
+                    }
             }
         }
     }
